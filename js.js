@@ -1,11 +1,12 @@
 $(document).ready(function() {
-	$("#contactus").click(function() {
-		confirmSignaler();
+	$('#contactus').click(function() {
+		
+		$('#message').show();
+		$('body').addClass('darker');
 		
 		$('#btnAnnuler').click(function() {
-		document.getElementById("message").style.margin="20%";
-			$("#messageWrapper").removeClass("visible");
-			return false;
+			$('#message').hide();
+			$('body').removeClass('darker');
 		});
 			
 		$('#btnEnvoyer').click(function() {
@@ -43,9 +44,4 @@ $(document).ready(function() {
 			});
 		});
 	});
-
-	function confirmSignaler(){
-		document.getElementById("message").style.margin="15%";
-		$("#messageWrapper").addClass("visible");
-	}
 });

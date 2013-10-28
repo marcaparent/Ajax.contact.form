@@ -1,14 +1,10 @@
 @charset "UTF-8";
 
 body{text-align:center;background:#dedede;color: #333;font-family:Tahoma,Helvetica,sans-serif}
+.darker{background:#646464}
 
-#content{width:778px;margin:auto;text-align:left;padding-left:14px;}
-
-#messageWrapper{position:absolute;width:778px;height:491px;margin:-20px;padding:20px 20px 0 20px;z-index:1000;display:none;}
-#messageWrapper #message{margin:20%;padding:5%;text-align:center;vertical-align:middle;background-color:white;-moz-box-shadow: 0 0 5px 2px #BBB;-webkit-box-shadow: 0 0 5px 2px#BBB;box-shadow: 0 0 5px 2px #BBB;z-index:2000}
-#messageWrapper.visible{display:block;}
-
-.hidden{display:none}
+#content{width:600px;margin:0 auto;}
+#message{position:absolute;display:none;width:400px;margin:20px 50px;padding:30px 50px;text-align:center;vertical-align:middle;background-color:white;-moz-box-shadow: 0 0 5px 2px #666;-webkit-box-shadow: 0 0 5px 2px#666;box-shadow: 0 0 5px 2px #666;z-index:2000}
 
 #signaler #courrielSignaler,#signaler #sujetSignaler{width:250px}
 #signaler #messageSignaler{width:250px;height:50px}
